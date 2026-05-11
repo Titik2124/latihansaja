@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+}
+.kotak-kanan {
+    width: 75%;
+    background-color: #f0f2f5;
+    padding: 30px;
+}
+.pilihan-menu {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.pilihan-menu.aktif {
+    background-color: #cbd5e0;
+    color: black;
+}
+.kotak-kiri {
+    width: 25%;
+    height: 100vh;
+    background-color: #34568b;
+}
+
+.area-kotak {
+    display: flex;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top:20px;
+}
+.kotak-menu {
+    width: 45%;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: body;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.warna-biru-muda {
+    background-color: #c1ccd7;
+}

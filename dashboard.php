@@ -1,58 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>PustakaPass - Dashboard</title>
+    <link rel="stylesheet" href="styledas.css">
 </head>
 <body>
-<ul>
-        <li><a href="dashboard.php?page=dashboard">Dashboard</a></li>
-        <li><a href="dashboard.php?page=manajemenanggota">Manajemen Anggota</a></li>
-        <li>Data Peminjaman</li>
-</ul>
-<hr>
-<nav>
-<ul>
-        <li>Dashbord</li>
-        <li>Manajemen Anggota</li>
-        <li>Laporan & Statistik</li>
-        <li>Scanner kehadiran</li>
-        <li>Log Out</li>
-</ul>
-</nav>
-</hr>
-<main>
-        <h2>Dashbord</h2>
-        <section>
-            <div>
-                <p>[Ikon Manajemen]</p>
-                <h3>Manajemen Anggota</h3>
+    <div class="kotak-kiri">
+    <h2 style="color: white; padding: 20px;">PustakaPass</h2>
+
+    <a href="index.php" class="pilihan-menu aktif">Dashboard</a>
+    <a href="anggota.php" class="pilihan-menu ">Manajemen Anggota</a>
+    <a href="#" class="pilihan-menu">Laporan & Statistik</a>
+    <a href="#" class="pilihan-menu">Scanner Kehadiran</a>
+    <a href="#" class="pilihan-menu">Log Out</a>
 </div>
-<div>
-    <p>[Ikon Scanner]</p>
-    <h3>Scanner Kehadiran</h3>
-</div>
-<div>
-    <p>[Ikon Laporan]</p>
-    <h3>Laporan & Statistik</h3>
-</div>
-<div>
-    <p>[Ikon Keluar]</p>
-    <h3>Log Out</h3>
-</div>
-</section>
-</main>
-</hr>
+
+    <div class="kotak-kanan">
+        <h1>Dashboard</h1>
+
+        <div class="area-kotak">
+            <div class="kotak-menu warna-biru-muda">Manajemen Anggota</div>
+            <div class="kotak-menu">Laporan & Statistik</div>
+            <div class="kotak-menu">Scanner Kehadiran</div>
+            <div class="kotak-menu warna-biru-muda">Log Out</div>
+        </div>
+    </div>
 
 </body>
 </html>
+
 
 <?php
 if(isset($_GET['page'])){
     $page = $_GET["page"];
     switch($page){
-        case "alat":
+        case "dash":
             include "alat.php";
             break;
         case "member":
